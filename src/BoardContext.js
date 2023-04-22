@@ -176,7 +176,7 @@ export const BoardProvider = ({ children }) => {
 
   // Human behavior
   // Human cards
-  const [humanCards, setHumanCards] = useState([...cardsDefault]);
+  const [humanCards, setHumanCards] = useState([...cardsDixit]);
 
   // Human phases
   const [humanPhases, setHumanPhases] = useState([
@@ -376,7 +376,7 @@ export const BoardProvider = ({ children }) => {
 
   // Test human edit game setting
   const [settingPlayerNumber, setSettingPlayerNumber] = useState(1);
-  const [settingGameMode, setSettingGameMode] = useState('default');
+  const [settingGameMode, setSettingGameMode] = useState('dixit');
 
   // Record drawn card's index
   const [drawnCardsIndex, setDrawnCardsIndex] = useState([]);
